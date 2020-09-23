@@ -24,6 +24,17 @@ $info: $firstAccent;
   background-color: $secondAccent;
 }
 
+@mixin vert-bar {
+  content: "";
+  display: block;
+  position: fixed;
+  height: 100px;
+  width: 2px;
+  bottom: 0;
+  margin-left: 12px;
+  background-color: $secondAccent;
+}
+
 body {
   background-color: $mainBG;
   height: 100%;
@@ -183,7 +194,10 @@ li {
   padding: 0;
   position: fixed;
   left: 2%;
-  bottom: 0;
+  bottom: 100px;
+  &::after {
+    @include vert-bar;
+  }
 }
 @media (max-width: 1400px) {
   #sidebar-links {
@@ -197,6 +211,9 @@ li {
     margin: 0 auto 20px auto;
     width: 50%;
     justify-content: space-evenly;
+    &::after {
+      display: none;
+    }
   }
 }
 .sidebar-link {
