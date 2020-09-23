@@ -1,4 +1,5 @@
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 
 const Header = () => (
@@ -9,8 +10,7 @@ const Header = () => (
       <Nav>
         <Nav.Link href="#about">About</Nav.Link>
         <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-        <Nav.Link href="#contact">Contact</Nav.Link>
-        <Nav.Link href="#resume" id="resume">Resume</Nav.Link>
+        <Button href="/resume.pdf" id="resume-button" size="lg" variant="outline-info">Resume</Button>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

@@ -11,7 +11,7 @@ const Intro = () => (
       <br />
       about creating things and solving problems
     </p>
-    <Button size="lg" variant="outline-info">Contact Me</Button>
+    <Button href="mailto:dtroyano86@gmail.com" size="lg" variant="outline-info">Contact Me</Button>
   </Col>
 );
 
