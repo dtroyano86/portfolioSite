@@ -7,6 +7,7 @@ const Header = () => (
     <Navbar.Toggle aria-controls="header-nav" />
     <Navbar.Collapse id="header-nav" className="justify-content-end">
       <Nav>
+        <Nav.Link href="#portfolio">About</Nav.Link>
         <Nav.Link href="#portfolio">Portfolio</Nav.Link>
         <Nav.Link href="#contact">Contact</Nav.Link>
         <Nav.Link href="#resume" id="resume">Resume</Nav.Link>
