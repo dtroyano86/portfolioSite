@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-$purple: #7337D4;
-$brightPurple: #E613D5;
-$teal: #56E2CA;
-$pink: #a60d99;
-$grey: #c9c9c9;
+$mainBG: #021213;
+$firstAccent: #FAB80A;
+$secondAccent: #BC403B;
+$lightOne: #89937C;
 $mono-font: 'Ubuntu Mono', monospace;
 
 $font-family-base: 'Saira Extra Condensed', sans-serif;
-$info: $pink;
+$info: $firstAccent;
 
 
 @import "~bootstrap/scss/bootstrap";
 
 
 body {
-  background-image: linear-gradient(to right,$teal, $purple);
+  background-color: $mainBG;
   height: 100%;
   color: white;
 }
@@ -38,7 +37,7 @@ body {
 }
 
 .intro {
-  color: $grey;
+  color: $lightOne;
 
   p {
     font-size: 1.5em;
@@ -47,15 +46,7 @@ body {
   p:first-child{
     margin-bottom: 0;
     font-family: $mono-font;
-    color: $pink;
-  }
-
-  h1 {
-    margin-top: 0;
-    font-size: 6em;
-    font-weight: 900;
-    letter-spacing: 3px;
-    color: white;
+    color: $firstAccent;
   }
 
   h2 {
@@ -69,6 +60,14 @@ body {
     font-family: $mono-font;
     letter-spacing: 1px;
   }
+}
+
+#intro-name {
+  margin-top: 0;
+  font-size: 6em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: white;
 }
 
 .group {
@@ -95,12 +94,12 @@ body {
   width: 300px;
   height: 2px;
   left: 120px;
-  background-color: $purple;
+  background-color: $secondAccent;
 }
 
 .profile-image {
-  background-color: $purple;
-  border: 2px solid $brightPurple;
+  background-color: $lightOne;
+  border: 2px solid $secondAccent;
 }
 
 .skills {
@@ -109,7 +108,7 @@ body {
   li {
     list-style: none;
     font-family: $mono-font;
-    color: $pink;
+    color: $firstAccent;
     font-size: 1.2em;
   }
 }
