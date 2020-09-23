@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+$purple: #7337D4;
+$teal: #56E2CA;
+$pink: #a60d99;
+$grey: #c9c9c9;
+$mono-font: 'Ubuntu Mono', monospace;
+
+$font-family-base: 'Saira Extra Condensed', sans-serif;
+$info: $pink;
+
+
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+  background-image: linear-gradient(to right,$teal, $purple);
+  height: 100%;
+  color: white;
+}
+
+.header {
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+#header-nav a {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.bar {
+  background-color: $pink;
+  height: 3px;
+  width: 40%;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+}
+
+.intro {
+  margin-top: 200px;
+  color: $grey;
+}
+
+.intro p {
+  font-size: 1.5em;
+}
+
+.intro p:first-child{
+  margin-bottom: 0;
+  font-family: $mono-font;
+  color: $pink;
+}
+
+.intro h1 {
+  margin-top: 0;
+  font-size: 6em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.intro h2 {
+  font-size: 5em;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.intro button {
+  font-size: 1.5em;
+  font-family: $mono-font;
+  letter-spacing: 1px;
+}
