@@ -6,7 +6,7 @@ const About = () => (
   <Col md="auto">
     <Row className="justify-content-md-center">
       <Col md={{ offset: 2, span: 6 }}>
-        <h1 id="about" className="group-title">About Me</h1>
+        <h3 id="about" className="group-title">About Me</h3>
         <p>Hi! I'm Daniel, a software engineer based out of New Orleans.</p>
         <p>
           I've always been very passionate about making things, whether that's woodworking, 
