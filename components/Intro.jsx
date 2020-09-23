@@ -7,7 +7,7 @@ const Intro = () => (
     <h1 id="intro-name">Daniel Troyano</h1>
     <h2>I make things for the internet</h2>
     <p>
-      I'm a New Orleans Software Engineer that has always been passionate
+      I'm a New Orleans Software Engineer who has always been passionate
       <br />
       about creating things and solving problems
     </p>
