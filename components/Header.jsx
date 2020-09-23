@@ -10,8 +10,7 @@ const Header = () => (
       <Nav>
         <Nav.Link href="#about">About</Nav.Link>
         <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-        <Button className="resume-button" size="lg" variant="outline-info">Resume</Button>
-        {/* <Nav.Link href="#resume" id="resume">Resume</Nav.Link> */}
+        <Button href="/resume.pdf" id="resume-button" size="lg" variant="outline-info">Resume</Button>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

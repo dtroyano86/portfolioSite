@@ -46,11 +46,12 @@ body {
   letter-spacing: 1px;
 }
 
-.resume-button {
-  font-size: 1.5em;
+#resume-button {
+  font-size: 1.5em !important;
+  font-weight: 400 !important;
   font-family: $mono-font;
-  letter-spacing: 1px;
-  padding: 0 16px;
+  letter-spacing: 1px !important;
+  padding: 8px 16px;
   margin-top: 5px;
   height: 50px;
 }
@@ -74,7 +75,7 @@ body {
     letter-spacing: 1px;
   }
 
-  button {
+  a {
     font-size: 1.5em;
     font-family: $mono-font;
     letter-spacing: 1px;
