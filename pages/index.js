@@ -1,7 +1,9 @@
+import Layout from '../components/Layout';
+
 const Home = () => (
-  <div>
-    This is my site
-  </div>
+  <Layout>
+    This is my App
+  </Layout>
 );
 
 export default Home;
