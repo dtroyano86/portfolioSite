@@ -137,6 +137,7 @@ li {
 
 .project-group {
   margin-bottom: 100px;
+  margin-left: 10px;
 }
 
 .project-image-container {
@@ -166,6 +167,39 @@ li {
 }
 
 .project-link {
+  font-size: 2em;
+  color: $lightTwo;
+  &:hover {
+    color: $lightOne;
+  }
+  &:active {
+    color: $firstAccent;
+  }
+}
+
+#sidebar-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: fixed;
+  left: 2%;
+  bottom: 0;
+}
+@media (max-width: 1400px) {
+  #sidebar-links {
+    left: 1%;
+  }
+}
+@media (max-width: 942px) {
+  #sidebar-links {
+    position: relative;
+    flex-direction: row;
+    margin: 0 auto 20px auto;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+}
+.sidebar-link {
   font-size: 2em;
   color: $lightTwo;
   &:hover {
