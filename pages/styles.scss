@@ -24,6 +24,17 @@ $info: $firstAccent;
   background-color: $secondAccent;
 }
 
+@mixin vert-bar {
+  content: "";
+  display: block;
+  position: fixed;
+  height: 100px;
+  width: 2px;
+  bottom: 0;
+  margin-left: 12px;
+  background-color: $secondAccent;
+}
+
 body {
   background-color: $mainBG;
   height: 100%;
@@ -137,6 +148,7 @@ li {
 
 .project-group {
   margin-bottom: 100px;
+  margin-left: 10px;
 }
 
 .project-image-container {
@@ -166,6 +178,45 @@ li {
 }
 
 .project-link {
+  font-size: 2em;
+  color: $lightTwo;
+  &:hover {
+    color: $lightOne;
+  }
+  &:active {
+    color: $firstAccent;
+  }
+}
+
+#sidebar-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: fixed;
+  left: 2%;
+  bottom: 100px;
+  &::after {
+    @include vert-bar;
+  }
+}
+@media (max-width: 1400px) {
+  #sidebar-links {
+    left: 1%;
+  }
+}
+@media (max-width: 942px) {
+  #sidebar-links {
+    position: relative;
+    flex-direction: row;
+    margin: 0 auto 20px auto;
+    width: 50%;
+    justify-content: space-evenly;
+    &::after {
+      display: none;
+    }
+  }
+}
+.sidebar-link {
   font-size: 2em;
   color: $lightTwo;
   &:hover {
